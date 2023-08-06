@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #222425;
+    color: #ffe4c4;
+    font-family: "Montserrat";
+}
+
+h1 {
+    /* width: 320px; */
+    text-transform: uppercase;
+    color: #8827e2;
+    font-size: 30px;
+}
+
+.header {
+    width: 320px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.score {
+    text-align: end;
+}
+
+.main {
+    width: 320px;
+    height: 620px;
+
+    margin: 0 auto;
+    border: 10px solid wheat;
+    
+    font-size: 0;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid wheat;
+    display: inline-block;
+}
+
+.movingCell {
+    background-color: cornflowerblue;
+    /* border: 1px solid wheat; */
+}
+
+.fixedCell {
+    background-color: coral;
+    /* border: 1px solid wheat; */
+}
+
+#game {
+    width: 320px;
+    margin: 0 auto;
+}
+
+span {
+    font-weight: 400;
+    color: rgb(136, 39, 226);
+}
+
+#smallg{
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffe4c4;
+}
+
+#next-tetro {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    font-size: 0;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 350px;
+    transform: translate(-50%, -50%);
+    transition: width linear 0.2s;
+
+    display: none;
+
+    text-align: center;
+    font-size: 80px;
+
+
+    background-color: grey;
+    color: greenyellow;
+
+
+
+  }
+
+#start{
+  position: absolute;
+  top: 210px;
+  left: 900px;
+}
+
+#pause {
+    position: absolute;
+    top: 260px;
+    left: 900px;
+}
+  button {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    font-size: 10px;
+    width: 100px;
+    border-radius: 1rem;
+    color:  rgb(136, 39, 226);
+    box-shadow: 0 0.2rem wheat;
+    cursor: pointer;
+   }
+   
+   button:active {
+    color: white;
+    box-shadow: 0 0.2rem wheat;
+    transform: translateY(0.2rem);
+   }
+   
+   button:hover:not(:disabled) {
+    background:  rgb(136, 39, 226);
+    color: white;
+
+   }
+   
+   button:disabled {
+    cursor: auto;
+    color: grey;
+   }
